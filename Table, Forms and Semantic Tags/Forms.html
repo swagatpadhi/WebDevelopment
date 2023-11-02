@@ -3,64 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
 </head>
 <body>
-    <h1>Form</h1>
-    <form action="backend.php">
-        <label for="name">Name:</label>
-        <div>
-            <input type="text" name="myName" id="name">
-        </div>
+    <form action="/contact-me">
+        <!-- text and password input type -->
+        <label for="user_name">UserName:</label>
+        <input type="text" placeholder="your email" id ="user_name" name="name" value="swagat"><br>
+        
+        <label for="user_password">Password:</label>
+        <input type="password" id="user_password" required="true"><br>
 
-        <div>
-            Role:<input type="text" name="myRole">
-        </div>
 
-        <div>
-            Email:<input type="email" name="myEmail">
-        </div>
+        <!-- other input types -->
+        Date:<input type="date"><br>
+        File:<input type="file"><br>
+        Color: <input type="color"><br>
+        Price Range: <input type="range"><br>
+        Button: <input type="button" value="press"><br>
 
-        <div>
-            Date:<input type="date" name="myDate">
-        </div>
+        <!-- Radio Button -->
+        <label for="man">purush</label>
+        <input type="radio" id="man" name="gender" value="male">
+        <label for="woman">stree</label>
+        <input type="radio" id="woman" name="gender" value="female">
+        <label for="transgender">hijda</label>
+        <input type="radio" id="transgender" name="gender" value="gay">
+        <!-- When given same names, we can select only one radio button. -->
+        <!-- when we connect the label to input, we are able to 
+        select even if we click the text. -->
 
-        <div>
-            Number:<input type="number" name="myNumber" >
-        </div>
+        <!-- checkBoxes -->
+        <p>What would you like to have sir?</p>
+        <label for="chicken">Chicken-Biryani:</label>
+        <input type="checkbox" name="food" id="chicken" value="biryaniChiken"><br>
+        
+        <label for="paneer">Panner Tikka:</label>
+        <input type="checkbox" name="food" id="paneer" value="panner tikka"><br>
 
-        <label for="eligibile">Are you eligible?</label>
-        <div>
-             <input type="checkbox" name="myEligibility" id="eligibile"checked>
-        </div>
+        <label for="salad">Greek-salad:</label>
+        <input type="checkbox" name="food" id="salad" value="greek-salad"><br>
 
-        <div>
-            Gender:
-             male<input type="radio" name="myGender">
-            female<input type="radio" name="myGender">
-            others<input type="radio" name="myGender">
-        </div>
+        <!-- select -->
+        <label for="hotel">where do want to dine?</label>
+        <select name="branch" id="hotel">
+            <option value="Mumbai-branch">mumbai</option>
+            <option value="Delhi-branch" selected>delhi</option>
+            <option value="Bhubaneshwar-branch">bbsr</option>
+        </select>
 
-        <div>
-            Bio:<br>
-            <textarea name="myText" cols="30" rows="10"></textarea>
-        </div>
+        <!-- text area -->
+        <textarea name="" id="" cols="15" rows="7">
+            default text
+        </textarea>
 
-        <div>
-            <label for="car">Choose Car</label>
-            <select name="myCar" id="car">
-                <option value="ind">indica</option>
-                <option value="swt" selected>swift</option>
-                <option value="merc">mercidese</option>
-            </select>
-        </div>
 
-        <div><input type="submit" value="Confirm Submit"></div>
-        <!-- when you click submit things will go to backend -->
-
-        <div>
-            <input type="reset" value="reset now">
-        </div>
+        Submit:<input type="submit">
     </form>
 </body>
 </html>
