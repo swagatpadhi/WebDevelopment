@@ -1,0 +1,33 @@
+*{
+    padding:0;
+    margin:0;
+    color:white;
+    font-size: 25px;
+}
+
+#logo{
+    color: rgb(219, 112, 246);
+    font-size: 45px;
+}
+#navBar{
+    background-color: rgb(15, 14, 14);
+    height: 60px;
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    border:1px solid rgb(219, 112, 246);
+    border-radius: 14px;
+    font-size: 33px;
+    color:rgb(219, 112, 246);
+}
+
+input{
+    background-color: rgb(0, 0, 0);
+    border:3px solid rgb(219, 112, 246);
+    border-radius: 24px;
+    padding: 7px;
+}
+a{
+    margin: 50px;
+}
