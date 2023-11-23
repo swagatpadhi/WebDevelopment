@@ -1,0 +1,17 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    font-size: 25px;
+    background-image: url("../Images/NaturePic.jpg");
+    background-size: cover;
+    color:rgb(20, 22, 20);
+    position:fixed;
+    top:50px;
+    right: 0;
+}
+
+#song{
+    color: blue;
+    position:fixed;
+}
