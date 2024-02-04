@@ -6,7 +6,7 @@
     <title>Forms</title>
 </head>
 <body>
-    <form action="/contact-me">
+    <form>
         <!-- text and password input type -->
         <label for="user_name">UserName:</label>
         <input type="text" placeholder="your email" id ="user_name" name="name" value="swagat"><br>
@@ -21,6 +21,7 @@
         Color: <input type="color"><br>
         Price Range: <input type="range"><br>
         Button: <input type="button" value="press"><br>
+        <button>Go!</button>
 
         <!-- Radio Button -->
         <label for="man">purush</label>
@@ -29,6 +30,8 @@
         <input type="radio" id="woman" name="gender" value="female">
         <label for="transgender">hijda</label>
         <input type="radio" id="transgender" name="gender" value="gay">
+        <!-- name attribute is crucial for associating the user input with a specific piece of data. When the form is submitted, the data is sent to the server with key-value pairs, where the name attribute serves as the key. -->
+        <!-- The value attribute is the data that gets submitted to the server when the form containing these radio buttons is submitted -->
         <!-- When given same names, we can select only one radio button. -->
         <!-- when we connect the label to input, we are able to 
         select even if we click the text. -->
@@ -45,16 +48,10 @@
         <input type="checkbox" name="food" id="salad" value="greek-salad"><br>
 
         <!-- select -->
-        <label for="hotel">where do want to dine?</label>
-        <select name="branch" id="hotel">
-            <option value="Mumbai-branch">mumbai</option>
-            <option value="Delhi-branch" selected>delhi</option>
-            <option value="Bhubaneshwar-branch">bbsr</option>
-        </select>
-
+       
         <!-- text area -->
         <textarea name="" id="" cols="15" rows="7">
-            default text
+            enter bio.
         </textarea><br>
 
         reset: <input type="reset" value="reset kardo"><br>
